@@ -1,0 +1,35 @@
+### getAll()
+GET http://localhost:8080/color/list
+
+### getAll(nameJa)
+GET http://localhost:8080/color/list?nameJa=赤
+
+### getAll(nameEn)
+GET http://localhost:8080/color/list?nameEn=red
+
+### getById(id)
+GET http://localhost:8080/color/1
+
+### create(color)
+POST http://localhost:8080/color/
+content-type: application/json
+
+{
+  "nameJa": "赤",
+  "nameEn": "red"
+}
+
+### update(id, color)
+PUT http://localhost:8080/color/1
+content-type: application/json
+
+{
+  "nameJa": "赤",
+  "nameEn": "fire"
+}
+
+### delete(id)
+DELETE http://localhost:8080/color/1
+
+### deleteAll()
+DELETE http://localhost:8080/color/
